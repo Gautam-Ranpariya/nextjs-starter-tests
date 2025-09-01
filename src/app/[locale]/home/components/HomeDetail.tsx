@@ -1,7 +1,7 @@
-'use client';
+'use client'
 
 // React Imports
-import Image from 'next/image';
+import Image from 'next/image'
 
 const HomeDetail = () => {
   return (
@@ -23,7 +23,7 @@ const HomeDetail = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default HomeDetail;
+export default HomeDetail

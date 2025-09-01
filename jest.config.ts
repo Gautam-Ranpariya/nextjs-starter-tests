@@ -1,12 +1,12 @@
 // Jest Imports
-import nextJest from 'next/jest';
-import { pathsToModuleNameMapper } from 'ts-jest';
+import nextJest from 'next/jest'
+import { pathsToModuleNameMapper } from 'ts-jest'
 
 // TypeScript Config Import
-import { compilerOptions } from './tsconfig.json';
+import { compilerOptions } from './tsconfig.json'
 
 // Create base Jest config using Next.js defaults
-const createJestConfig = nextJest({ dir: './' });
+const createJestConfig = nextJest({ dir: './' })
 
 // Custom Jest configuration overrides
 const customJestConfig = {
@@ -20,7 +20,7 @@ const customJestConfig = {
 
   // Exclude build output and dependencies from tests
   testPathIgnorePatterns: ['<rootDir>/.next/', '<rootDir>/node_modules/'],
-};
+}
 
 // Export the merged Jest configuration
-export default createJestConfig(customJestConfig);
+export default createJestConfig(customJestConfig)

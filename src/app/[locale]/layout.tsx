@@ -1,17 +1,17 @@
 // Common Components Import
-import LocaleProvider from 'common/components/LocaleProvider';
+import LocaleProvider from 'common/components/LocaleProvider'
 
 // Utility Import
-import { getDirection } from 'common/utils/get-direction';
+import { getDirection } from 'common/utils/get-direction'
 
 // Next.js Import
-import type { Metadata } from 'next';
+import type { Metadata } from 'next'
 
 // Style Import
-import '../globals.css';
+import '../globals.css'
 
 // Localization Import
-import { getMessages } from 'next-intl/server';
+import { getMessages } from 'next-intl/server'
 
 // Metadata config
 export const metadata: Metadata = {
@@ -65,19 +65,19 @@ export const metadata: Metadata = {
     apple: '/apple-touch-icon.png',
   },
   // themeColor: "#0f172a", // slate-900 for dark modern theme
-};
+}
 
 export default async function RootLayout({ children, params }: RootLayoutProps) {
-  const resolvedParams = await params;
+  const resolvedParams = await params
 
   // Variable
-  const locale = resolvedParams.locale || 'en-US';
+  const locale = resolvedParams.locale || 'en-US'
 
   // Get the direction of the current locale
-  const direction = getDirection(locale);
+  const direction = getDirection(locale)
 
   // Get the translations for the current locale
-  const messages = await getMessages({ locale });
+  const messages = await getMessages({ locale })
 
   return (
     <html lang={locale} dir={direction}>
@@ -87,5 +87,5 @@ export default async function RootLayout({ children, params }: RootLayoutProps) 
         </LocaleProvider>
       </body>
     </html>
-  );
+  )
 }

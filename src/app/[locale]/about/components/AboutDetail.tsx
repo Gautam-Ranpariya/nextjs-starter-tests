@@ -1,7 +1,7 @@
-'use client';
+'use client'
 
 // Next.js Imports
-import Image from 'next/image';
+import Image from 'next/image'
 
 const AboutDetail = () => {
   return (
@@ -36,7 +36,7 @@ const AboutDetail = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default AboutDetail;
+export default AboutDetail

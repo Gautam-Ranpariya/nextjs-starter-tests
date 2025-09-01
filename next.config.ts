@@ -1,8 +1,8 @@
 // Next.js Import
-import type { NextConfig } from 'next';
+import type { NextConfig } from 'next'
 
 // Localization Import
-import createNextIntlPlugin from 'next-intl/plugin';
+import createNextIntlPlugin from 'next-intl/plugin'
 
 const nextConfig: NextConfig = {
   eslint: {
@@ -22,8 +22,8 @@ const nextConfig: NextConfig = {
   },
   reactStrictMode: false, // Optional: Strict mode for React
   // Other Next.js configurations
-};
+}
 
-const withNextIntl = createNextIntlPlugin();
+const withNextIntl = createNextIntlPlugin()
 
-export default withNextIntl(nextConfig);
+export default withNextIntl(nextConfig)
