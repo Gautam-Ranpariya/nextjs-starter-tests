@@ -17,8 +17,8 @@ const nextConfig: NextConfig = {
       {
         protocol: 'https',
         hostname: 'bobbyhadz.com',
-      }
-    ]
+      },
+    ],
   },
   reactStrictMode: false, // Optional: Strict mode for React
   // Other Next.js configurations

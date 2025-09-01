@@ -6,15 +6,15 @@ import Image from 'next/image'
 const HomeDetail = () => {
   return (
     <>
-      <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-10">
-        <div className="bg-white w-1/2 mx-auto mt-20 rounded-md p-4">
-          <h2 className="text-2xl font-bold text-center">Welcome to my Boilerplate</h2>
+      <div className="bg-opacity-50 fixed top-0 left-0 z-10 h-full w-full bg-black">
+        <div className="mx-auto mt-20 w-1/2 rounded-md bg-white p-4">
+          <h2 className="text-center text-2xl font-bold">Welcome to my Boilerplate</h2>
           <p className="mt-4 text-center">
-            This is a Next.js boilerplate for scalable apps with Tailwind CSS,
-            TypeScript, and localization.
+            This is a Next.js boilerplate for scalable apps with Tailwind CSS, TypeScript, and
+            localization.
           </p>
           <Image
-            className="mt-4 mx-auto"
+            className="mx-auto mt-4"
             src={`https://picsum.photos/400/400?random=${Date.now()}`}
             alt="Next.js"
             width={300}

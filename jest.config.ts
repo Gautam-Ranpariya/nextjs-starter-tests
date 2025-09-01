@@ -11,7 +11,7 @@ const createJestConfig = nextJest({ dir: './' })
 // Custom Jest configuration overrides
 const customJestConfig = {
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'], // Setup file for test environment
-  testEnvironment: 'jest-environment-jsdom',       // Use JSDOM for browser-like testing
+  testEnvironment: 'jest-environment-jsdom', // Use JSDOM for browser-like testing
 
   // Map TypeScript path aliases to Jest moduleNameMapper
   moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths || {}, {

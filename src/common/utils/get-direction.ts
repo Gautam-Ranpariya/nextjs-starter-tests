@@ -1,7 +1,6 @@
-
 export function getDirection(locale: string) {
-  if (locale === "ar-SA") {
-    return "rtl";
+  if (locale === 'ar-SA') {
+    return 'rtl'
   }
-  return "ltr";
+  return 'ltr'
 }

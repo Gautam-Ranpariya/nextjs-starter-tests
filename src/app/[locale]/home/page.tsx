@@ -4,7 +4,7 @@ import HomeDetail from './components/HomeDetail'
 const Home = () => {
   return (
     <>
-     <HomeDetail />
+      <HomeDetail />
     </>
   )
 }

@@ -1,10 +1,8 @@
 // Component Imports
-import HomeDetail from "./home/components/HomeDetail";
+import HomeDetail from './home/components/HomeDetail'
 
 const Home = () => {
-  return (
-    <HomeDetail />
-  );
+  return <HomeDetail />
 }
 
-export default Home;
+export default Home
