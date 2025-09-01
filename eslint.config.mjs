@@ -1,6 +1,7 @@
-import { dirname } from "path";
-import { fileURLToPath } from "url";
-import { FlatCompat } from "@eslint/eslintrc";
+import { dirname } from 'path';
+import { fileURLToPath } from 'url';
+import { FlatCompat } from '@eslint/eslintrc';
+import prettier from 'eslint-plugin-prettier';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -10,12 +11,23 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
-  // Add overrides for mock files
+  ...compat.extends('next/core-web-vitals', 'next/typescript'),
+
+  // ✅ Add Prettier as a plugin
   {
-    files: ["src/common/__mocks__/**"],
+    plugins: {
+      prettier,
+    },
     rules: {
-      "@next/next/no-img-element": "off",
+      'prettier/prettier': 'error',
+    },
+  },
+
+  // ✅ Example override for mocks
+  {
+    files: ['src/common/__mocks__/**'],
+    rules: {
+      '@next/next/no-img-element': 'off',
     },
   },
 ];

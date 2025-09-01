@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
 // Localization Import
-import { NextIntlClientProvider } from "next-intl";
+import { NextIntlClientProvider } from 'next-intl';
 
 const LocaleProvider = ({ children, locale, messages }: LocalProviderProps) => {
   return (
@@ -9,6 +9,6 @@ const LocaleProvider = ({ children, locale, messages }: LocalProviderProps) => {
       {children}
     </NextIntlClientProvider>
   );
-}
+};
 
-export default LocaleProvider
+export default LocaleProvider;

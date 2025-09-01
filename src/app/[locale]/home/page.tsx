@@ -1,12 +1,12 @@
 // Component Imports
-import HomeDetail from './components/HomeDetail'
+import HomeDetail from './components/HomeDetail';
 
 const Home = () => {
   return (
     <>
-     <HomeDetail />
+      <HomeDetail />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

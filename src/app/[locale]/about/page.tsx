@@ -1,12 +1,12 @@
 // Component Import
-import AboutDetail from './components/AboutDetail'
+import AboutDetail from './components/AboutDetail';
 
 const About = () => {
   return (
     <>
       <AboutDetail />
     </>
-  )
-}
+  );
+};
 
-export default About
+export default About;
