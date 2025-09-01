@@ -11,6 +11,13 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
+  // Add overrides for mock files
+  {
+    files: ["src/common/__mocks__/**"],
+    rules: {
+      "@next/next/no-img-element": "off",
+    },
+  },
 ];
 
 export default eslintConfig;
