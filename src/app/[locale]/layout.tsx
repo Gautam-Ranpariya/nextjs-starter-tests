@@ -1,8 +1,8 @@
 // Common Components Import
-import LocaleProvider from "@/common/components/LocaleProvider";
+import LocaleProvider from "common/components/LocaleProvider";
 
 // Utility Import
-import { getDirection } from "@/common/utils/get-direction";
+import { getDirection } from "common/utils/get-direction";
 
 // Next.js Import
 import type { Metadata } from "next";

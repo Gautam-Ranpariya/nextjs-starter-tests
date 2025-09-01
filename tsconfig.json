@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
     "target": "ES2017",
+    "types": ["jest", "node"],
+    "baseUrl": "./src",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -22,9 +24,8 @@
       "@/*": ["./src/*"],
       "@/common/*": ["./src/common/*"],
       "@/app/*": ["./src/app/*"],
-      "@/config/*": ["./config/*"],
-      "@/i18n/*": ["./i18n/*"],
-      "@/locale/*": ["./locale/*"],
+      "@/i18n/*": ["./src/i18n/*"],
+      "@/locale/*": ["./src/common/locale/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "next.config.mjs"],
