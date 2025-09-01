@@ -22,10 +22,17 @@ type Locale =
 
 type RootLayoutParams = {
   locale: Locale | string;
-};
+}
 
 type LocalProviderProps = {
   children: React.ReactNode;
   locale: Locale;
   messages: Record<string, string>;
-};
+}
+
+type NextImageProps = {
+  src: string
+  alt: string
+  width?: number
+  height?: number
+}
