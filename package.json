@@ -4,11 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "yarn format && yarn lint && next build",
     "start": "next start",
     "lint": "next lint",
-    "prettier": "prettier --write .",
-    "prettier:ci": "prettier --check .",
+    "format": "prettier --write .",
+    "format:ci": "prettier --check .",
     "test": "jest --passWithNoTests",
     "test:watch": "jest --watch",
     "test:ci": "jest --ci --runInBand"
